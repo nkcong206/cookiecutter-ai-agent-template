@@ -1,0 +1,3 @@
+CREATE CONSTRAINT unique_user_id IF NOT EXISTS
+FOR (u:User)
+REQUIRE u.id IS UNIQUE;
